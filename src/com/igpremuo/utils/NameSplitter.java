@@ -1,10 +1,10 @@
-/**
+package com.igpremuo.utils; /**
  * Author: Ignacio Pérez
  * 
  * igpremuo@inf.upv.es 2014
  */
 
-/*
+/**
  * Utility to split names.
  * Designed for Spanish names, but extensible to others.
  * Can be used as instantiated class or as a static class.
@@ -15,7 +15,7 @@ public class NameSplitter {
 	public final static int MIDDLE_NAME = 1;
 	public final static int LAST_NAME 	= 2;
 	
-	public final static String[] CONECTORS = {"de", "del", "los", "la" , "i" , "santa"};
+	private final static String[] CONECTORS = {"de", "del", "los", "la" , "i" , "santa"};
 	
 	private String mCompleteName;
 	private String mFirstName;
@@ -34,18 +34,43 @@ public class NameSplitter {
 		mLastName 	= splittedName[LAST_NAME];
 	}
 	
+	public String getCompleteName() {
+		return mCompleteName;
+	}
+
+	public void setCompleteName(String completeName) {
+		mCompleteName = completeName;
+	}
+
 	public String getFirstName() {
 		return mFirstName;
+	}
+
+	public void setFirstName(String firstName) {
+		mFirstName = firstName;
 	}
 	
 	public String getMiddleName() {
 		return mMiddleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		mMiddleName = middleName;
 	}
 	
 	public String getLastName() {
 		return mLastName;
 	}
 
+	public void setLastName(String lastName) {
+		mLastName = lastName;
+	}
+
+	/**
+	 * Split the given name and return a string array with the names
+	 * @param completeName complete name in a single string
+	 * @return string array
+	 */
 	public static String[] split(String completeName) {
 		// Pre-process of the name
 		String name = completeName;
