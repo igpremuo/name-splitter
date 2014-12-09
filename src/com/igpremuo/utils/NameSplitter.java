@@ -33,7 +33,7 @@ public class NameSplitter {
 		mMiddleName = splittedName[MIDDLE_NAME];
 		mLastName 	= splittedName[LAST_NAME];
 	}
-	
+
 	public String getCompleteName() {
 		return mCompleteName;
 	}
