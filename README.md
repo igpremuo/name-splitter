@@ -3,9 +3,9 @@ NameSplitter
 
 Utility to split names into the three commons names:
 
-    * First name
-    * Middle name
-    * Last name
+- First name
+- Middle name
+- Last name
 
 Adapted for spanish names but extensible for others countries.
 
