@@ -1,7 +1,7 @@
-NameSplitter
+NameSplitter, a name splitter for Java
 ============
 
-Utility to split names into the three commons names using a backtracking algorithm.
+Utility to split names into the three common names using a backtracking algorithm. Automatically detects if has three, two or one name. 
 
 ## Usage
 
@@ -21,8 +21,8 @@ String middleName = NameSplitter.split(nameToSplit)[NameSplitter.MIDDLE_NAME];
 String lastName = NameSplitter.split(nameToSplit)[NameSplitter.LAST_NAME];
 ```
 
-Adapted for spanish names but extensible for others countries.
+Adapted for spanish names but extensible for others countries names.
 
-## Test
+## Accuracy of splitting
 
-Tested with a total of 230 spanish names with an accurate of 98.7%.
+Tested with a total of 230 spanish names with an accuracy of 98.7%.
